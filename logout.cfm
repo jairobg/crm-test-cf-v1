@@ -1,0 +1,1 @@
+<cfinvoke component="components.login" method="logout">

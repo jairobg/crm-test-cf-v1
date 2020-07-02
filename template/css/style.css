@@ -1,0 +1,447 @@
+/*Include Google Fonts*/
+@import url(http://fonts.googleapis.com/css?family=Oswald&v1);
+
+
+body{  font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; }
+
+
+/*Wraper
+*********************************************/
+#top .wrapper{ margin:auto; width:100%; }
+#footer .wrapper{ margin:auto; width:100%; }
+
+
+
+/*HEADER
+****************************************************/
+#top{ font-family: 'Oswald', arial, serif; margin: 0px; padding: 0px; }
+#top .left{ width: 214px; float: left; }
+	#logo{}
+	#welcome{ background: white; margin-top: -5px;}
+	#welcome h3{  font-weight: lighter; color: black; font-size: 0.9em; margin: 4px 0px 0px 10px; text-shadow: 0px 1px 0px white;}
+	#welcome p{ color: gray; font-size: 1.2em; margin: 0px 0px 0px 30px; text-shadow: 0px 1px 0px white;}
+	#left-space{ height: 40px; background: white;}
+	
+#top .right{ width: 100%; margin-left: 214px; position: absolute; float: left; background: #3FA9F5;}
+	#top-info{ height: 88px; width: 100%;}
+		#client-info { padding: 30px 0px 0px 20px;}
+		#client-info h2{ font-size: 15px; font-weight: normal; color: white; }
+		#client-info h3#current-client{ padding-left: 25px;  font-size: 24px; font-weight: normal; color: black; text-shadow: 0px 1px 0px #99CCFF;
+			background: url(../images/cdlg-icons.png) no-repeat -16px -32px;
+		}
+		#client-info h3#select-client{ color: #900; font-weight: lighter; font-size: 15px; text-shadow: 0px 1px 0px #FFCCCC;}
+		#top-bar{ background: #333; }
+
+
+/*LOGIN PAGE STYLES - home page
+****************************************************/
+.login-section{ background: white !important;}
+#login-title{   background: black;}
+#login-title h2{ padding: 5px 5px 5px 20px; margin-left: 10px; display: block; color: white; font-size: 26px; font-family: 'Oswald', arial, serif; 	background: url(../images/cdlg-icons.png) no-repeat 0px 8px; text-shadow: 0px 1px 0px black; }
+#login-content{ margin-left: 214px;}
+	#loginForm{ width: 40%; padding: 40px 20px 40px 0px;}
+	#loginForm ul li{ margin-bottom: 10px;}
+	#loginForm input{ width: 100%; border: solid 1px #ccc; font-size: 2em; padding: 0.3em; background: white url(../images/input-bg.jpg) repeat-x top; 
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+	}
+	#loginForm .btnLogin{ width: 120px; height: 42px; float: right;  border: none; text-indent: -9999px; overflow: hidden; background: url(../images/btn-login.png) no-repeat 0px 0px; }
+	#loginForm .btnLogin:hover{background: url(../images/btn-login.png) no-repeat 0px -42px;}
+	
+	
+
+/*MAIN NAV - admin page
+****************************************************/
+/*main-nav*/
+#main-nav { height: 35px; float: left; background: black;}
+#main-nav li{ list-style: none; float: left;  }
+#main-nav li a{ font-weight: lighter !important; font-size: 1.2em; padding: 0.5em 0.5em; display: block; color: #ccc; text-decoration: none; text-shadow: 0px 1px 0px black;}
+#main-nav li a:hover{color: #3399FF; background: #222; }
+	/*active items*/
+	body#search #main-nav li#item1 a,
+	body#clients #main-nav li#item2 a,
+	body#properties #main-nav li#item3 a,
+	body#creditors #main-nav li#item4 a,
+	body#intake #main-nav li#item5 a,
+	body#lawsuits #main-nav li#item6 a,
+	body#settlements #main-nav li#item7 a,
+	body#history #main-nav li#item8 a,
+	body#legal-matters #main-nav li#item9 a,
+	body#payments #main-nav li#item10 a,
+	body#paymentsImport #main-nav li#item11 a{color: #3399FF; height: 26px; background: url(../images/nav-arrow.png) no-repeat bottom; }
+	
+		
+/*sub-nav*/
+#sub-nav { padding-left: 5px; height: 35px; float: left; background: #333; }
+#sub-nav li{ list-style: none; float: left;  }
+#sub-nav li a{ font-weight: lighter !important; font-size: 1.1em; padding: 0.6em 0.5em; display: block; color: #666; text-decoration: none; text-shadow: 0px 1px 0px black;}
+#sub-nav li a:hover{color: white; }
+#sub-nav li#item-logout a{ padding-left: 30px; background: url(../images/logout-icon-a.png) no-repeat 4px 7px; }
+#sub-nav li#item-logout a:hover{ background: url(../images/logout-icon-b.png) no-repeat 4px 7px;}
+
+
+
+
+/*MAIN CONTENT
+*****************************************************/
+#main{ background: #f1f1f1;  }
+#main .wrapper{ }
+#main .left{ width: 794px; padding: 15px 10px; background: white; float: left; }
+#main .right{ width: 180px; float: left; }
+	#main .toolbox h3{ padding: 5px 5px 15px 5px; font-size: 1.2em; font-weight: lighter; color: black; background: url(../images/title-bg.png) no-repeat   left bottom; font-family: 'Oswald', arial, serif; text-shadow: 0px 1px 0px #ccc;}
+	#main .toolbox h4{ padding: 5px 5px 15px 5px; font-size: 1.2em; font-weight: lighter; color: black;}
+	/*general nav*/
+	#general-nav { margin: 10px 5px ; }
+	#general-nav li{ margin-bottom: 3px; list-style: none;}
+	#general-nav li a{ background: url(../images/toolbox-icons.png) no-repeat; padding: 2px 2px 2px 20px; display: block; color: #0066CC; font-size: 1em; text-decoration: none; text-shadow: 0px 1px 0px white;}
+	#general-nav li a:hover{ color: black;}	
+		/*set icons*/
+		#general-nav li#item1 a{ background-position: 3px 3px; background-position-x: 3px; background-position-y: 3px;}
+		#general-nav li#item2 a{ background-position: 3px -20px; background-position-x: 3px; background-position-y: -20px;}
+		#general-nav li#item3 a{ background-position: 3px -45px; background-position-x: 3px; background-position-y: -45px;}
+		#general-nav li#item4 a{ background-position: 3px -70px; background-position-x: 3px; background-position-y: -70px;}
+		#general-nav li#item5 a{ background-position: 3px -95px; background-position-x: 3px; background-position-y: -95px;}		
+		#general-nav li#item6 a{ background-position: 3px -120px; background-position-x: 3px; background-position-y: -120px;}
+		#general-nav li.spacer, #general-nav li.spacer hr{ margin: 0px; padding: 0px;}
+		
+		/*Flow Control*/
+		#flowControlDiv .msg-alert{ padding: 10px; color: #c00; text-transform: 1px 1px 0px #fff;}
+		#flowControl fieldset{ padding: 0px 8px;}
+		#flowControl fieldset select{ font-size: 0.9em;}
+		#flowControl fieldset input{ padding: 0.5em 0.4em;  font-size: 0.7em; background: black; color: white; border: solid 1px #333;}
+		#flowControl fieldset input:hover{ color: black; background: #39F;}
+		
+		/*Retainer*/
+		#retainerStatusForm input{ padding: 0.5em 0.4em;  font-size: 0.7em; background: black; color: white; border: solid 1px #333;border-radius: 6px;}
+		#retainerStatusForm input:hover{ color: black; background: #39F;border-radius: 6px;}
+		
+		#retainerCancelForm input{ 
+			padding: 0.5em 0.4em;  
+			font-size: 0.7em; 
+			background: red; 
+			color: black; 
+			border: solid 1px red;
+			border-radius: 6px;
+		}
+
+		#retainerCancelForm input:hover{ 
+			color: white; 
+			background: black;
+			border-color: black;
+			border-radius: 6px;
+		}
+
+
+/*FOOTER
+****************************************************/
+#footer{ height: 40px; background: #444; border-top: solid 4px black;}
+#footer .left{  float: left; }
+#footer .right{ float: left;}
+#footer small{display: block; padding: 4px 4px 40px 4px;  color: black; text-shadow: 0px 1px 0px #666;}
+
+
+
+/*GENERAL FORM STYLES
+***************************************/
+fieldset { width: 100%; margin: 10px 0px 10px 0px;}
+fieldset.col1{ float: left; width: 48% !important; margin-right: 20px;}
+fieldset.col2{float: left; width: 48% !important;}
+
+fieldset input, fieldset select, fieldset textarea{ border: solid 1px #ccc; font-size: 1.1em; padding: 0.3em; 
+	background: white url(../images/input-bg.jpg) repeat-x top; 
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+fieldset legend{ font-size: 1.2em; width: 100%; color: black; border-bottom: solid 1px  #ccc; font-family: 'Oswald', arial, serif;}
+fieldset ul{ padding: 10px;}
+
+/*
+fieldset ul.col1 { width: 350px; margin: 0px 10px 5px 0px;  float: left;}
+fieldset ul.col2 { width: 350px; margin: 0px 0px 5px 0px;  float: left;}
+*/
+fieldset ul.col1 { width: 47%; /*margin: 0px 10px 10px 0px;*/  float: left;}
+fieldset ul.col2 { width: 47%; /*padding: 10px 0px 10px 10px; margin: 0px 0px 5px 0px;*/  float: left;}
+
+fieldset ul li{margin: 0px 0px 5px 0px;}
+fieldset ul li label{width: 100px; padding: 3px 0px 0px 0px; float: left; font-size: 0.8em; color: #666;}
+
+fieldset ul.checklist li{ }
+fieldset ul.checklist li label{ padding: 0.5em 0.3em;; display: block; width: 100%; font-size: 0.8em; float: none !important;}
+fieldset ul.checklist li input{ margin-right: 0.5em;}
+fieldset ul.checklist li em{ font-style: italic; color: #333;}
+fieldset ul.checklist li:hover { background: #f1f1f1; 	
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+
+	/*Overwrite columns width*/
+	#addHistoryNoteForm li{ float: none; width: 400px} 
+	
+	#legalMatterEditForm .col1,
+	#legalMatterAddForm .col1{ width: 400px;}
+	#legalMatterEditForm .col2,
+	#legalMatterAddForm .col2 { width: 300px;}
+	#legalMatterEditForm .col2 li label,
+	#legalMatterAddForm .col2 li label{ width: 70px;}
+
+	#legalMattersEditTaskForm .col1,
+	#legalMattersAddsTaskForm .col1 { width: 60%;}
+	#legalMattersEditTaskForm .col1 label { width: 70px;}
+	#legalMattersEditTaskForm .col2,
+	#legalMattersAddsTaskForm .col2 { width: 30%;}
+
+	
+	/*Custom Inputs*/
+	.inputCurrency input { color: green; padding-left: 20px; width: 50%; text-align: right; background: url(../images/currency-gray-icon.png) left no-repeat , url(../images/input-bg.jpg) top repeat-x ; }
+	.inputDate input{ padding-left: 20px; width: 80%; margin-bottom: 5px;}
+	.inputRadio input { vertical-align: top; margin-right: 10px;}
+	.inputRadio label{ width: 100%;}
+	.inputNotes input { float: none; }
+	.inputNotes label {width: 100%; margin-top: 10px;}
+	.x-window-body .inputCurrency input { width: 33%;} /*<< overwrite width in popups form*/
+	.inputDateTime {  width: 70%; }
+	.inputDateTime input{padding-left: 20px;}
+	.inputDateTime label{ width: 30px;}
+ 	.inputTime  { margin-left: 10px; float:left;}
+	
+	ul.fullwidth li{ margin-bottom: 20px; }
+	ul.fullwidth li label{ width: 51% !important;}
+	ul.fullwidth li.inputDate input{ width: 40%;}
+/*
+	li.fullwidth{}
+	li.fullwidth label{ display: block; float: none; width: 100% !important;}
+	li.fullwidth input, li.fullwidth select{ float: none; }
+*/
+	
+	/*CF Date Inputs, overwrite to left position */
+	#scDateBirthfileForm_cf_buttondiv,
+	#dateBirthfileForm_cf_buttondiv,
+	#dateBirthfileAddForm_cf_buttondiv,
+	#scDateBirthfileAddForm_cf_buttondiv,
+	#itkFirstInstallmentDateintakeForm_cf_buttondiv,
+	#itkRecurrentPaymentDateintakeForm_cf_buttondiv,
+	#dateaddLawsuitForm_cf_buttondiv,
+	#dateeditLawsuitForm_cf_buttondiv,
+	#openDatelegalMatterAddForm_cf_buttondiv,
+	#closeDatelegalMatterAddForm_cf_buttondiv,
+	#openDatelegalMatterEditForm_cf_buttondiv,
+	#closeDatelegalMatterEditForm_cf_buttondiv,
+	#taskStartlegalMattersAddsTaskForm_cf_buttondiv,
+	#taskEndlegalMattersAddsTaskForm_cf_buttondiv,
+	#dateTimelegalMattersAddsComunicationsForm_cf_buttondiv,
+	#dateTimeeditlegalMattersAddsComunicationsForm_cf_buttondiv,
+	#legalMatterViolationDatelegalMattersAddsViolationsForm_cf_buttondiv,
+	#legalMatterViolationDateeditLegalMattersAddsViolationsForm_cf_buttondiv,
+	#saleDateaddPropertyForm_cf_buttondiv,
+	#dateForLoanModaddPropertyForm_cf_buttondiv,
+	#saleDateeditPropertyForm_cf_buttondiv,
+	#dateForLoanModeditPropertyForm_cf_buttondiv,
+	#itkFirstInstallmentDateMortgageLMintakeForm_cf_buttondiv,
+	#itkFirstInstallmentDateMortgageFDintakeForm_cf_buttondiv,
+	#itkFirstInstallmentDateBankruptcyintakeForm_cf_buttondiv,
+	#transactionDatepaymentAddForm_cf_buttondiv,
+	#paymentDatepaymentAffiliateAddForm_cf_buttondiv,
+	#itkTotalRetainerFeeMortgageDateLMintakeForm_cf_buttondiv,
+	#itkSecondTotalRetainerFeeMortgageDateLMintakeForm_cf_buttondiv,
+	#itkTotalRetainerFeeMortgageDateFDintakeForm_cf_buttondiv,
+	#itkSecondTotalRetainerFeeMortgageDateFDintakeForm_cf_buttondiv,
+	#taskStartlegalMattersEditTaskForm_cf_buttondiv,
+	#taskEndlegalMattersEditTaskForm_cf_buttondiv,
+	#taskStartlegalMattersEditTaskForm_cf_buttondiv,
+	#taskEndlegalMattersEditTaskForm_cf_buttondiv,
+	#firstDateLoanOpenedaddPropertyForm_cf_buttondiv,
+	#firstDateLastPaymentaddPropertyForm_cf_buttondiv,
+	#secondDateLoanOpenedaddPropertyForm_cf_buttondiv,
+	#secondDateLastPaymentaddPropertyForm_cf_buttondiv { cursor: pointer; margin: 3px 0px 0px 3px;  position: absolute;}
+	
+	/*custom select*/
+	#idLegalMatterViolationList{ font-size: 0.9em;}
+
+
+	/*Action Buttons*/
+	.action-buttons { clear: both;  width: 100%; border-top: solid 1px #ccc; padding: 10px 0px; text-align: right; background: #f1f1f1; }
+	.action-buttons	input, .action-buttons button{ margin-right: 10px; background: black; color: white; border: solid 1px #333; padding: 0.3em 0.9em; font-size: 1.1em; font-family: 'Oswald', arial, serif;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.action-buttons	input:hover, .action-buttons button:hover{ background: #0066CC; }
+
+
+	.submitButton { clear: both;  width: 100%; border-top: solid 1px #ccc; padding: 10px 0px; text-align: right; background: #f1f1f1; text-decoration: none;}
+	.submitButton { margin-right: 10px; background: black; color: white; border: solid 1px #333; padding: 0.3em 0.9em; font-size: 1.1em; font-family: 'Oswald', arial, serif;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.submitButton:hover{ background: #0066CC; }
+
+
+
+	.cancelButton{ float: right; position: relative; margin-top: -50px; margin-right: 90px; background: #eee; color: black; border: solid 1px #ccc; padding: 0.3em 0.9em; font-size: 1.1em; font-family: 'Oswald', arial, serif;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.cancelButton:hover{ background: #666; color: white;}
+	
+	/*Error message styles*/
+	div.error, div.error-login{ padding: 7px 7px 7px 25px; margin: 10px 0px; color: #900 !important; font-size: 90%;
+		background: #FFCCCC url(../images/warning-icon-small.png) no-repeat 4px center; 
+		border: solid 1px #FFCCCC;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}	
+	div.error{display: none;}
+	div.error-login{display: block; margin: 0px; width: 95%;}
+	input.error, select.error { border: 1px solid red;  background-color: #FFFFD5; margin: 0px; color: red; }
+	label.error {display: none !important; }
+	.alert{ clear: both; display: block; padding: 7px 7px 7px 25px; margin: 10px 0px; color: #900 !important; font-size: 95%;
+		background: #FFCCCC url(../images/warning-icon-small.png) no-repeat 4px center; 
+		border: solid 1px #FFCCCC;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;}
+	
+/*Grids*/
+img.btnEdit, img.btnDelete, img.btnInfo, img.btnDownload{cursor: pointer; height: 15px;}
+img.fileColor{height: 15px;}
+
+/*Search Section
+*******************************************/
+fieldset #searchedWord{ margin-left: 204px; font-size: 1.2em; padding: 0.3em; color: #0066CC !important; background: url(../images/search-icon.png) no-repeat right -3px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+fieldset #searchedWord:hover{background: url(../images/search-icon.png) no-repeat right -33px;}
+
+
+
+
+.info{
+	position:absolute;
+	top:5px;
+	background-color:white;
+	padding:10px;
+}
+
+#jquery-test{
+	top:45px;
+}
+
+
+
+/* CFDiv's  specifications
+*******************************************/
+
+#lawsuitFormDiv{height: 166px;}
+#settlementFormDiv{height: 226px;}
+#historyFormDiv{height: 236px;}
+#historyFormDiv{height: 236px;}
+#legalMatterForm{min-height: 262px;}
+#legalMattersAddsTaskFormDiv{height: 295px;}
+#legalMattersAddsNotesFormDiv{height: 184px;}
+#legalMattersAddsComunicationsFormDiv{height: 246px;}
+#legalMattersAddsViolationsFormDiv{height: 265px;}
+
+
+
+
+
+/*
+ *  CSS3 Media queries
+ */
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/*Search Section
+
+*******************************************/
+
+fieldset #searchedWord{ 
+	background: url(../images/search-icon.png) no-repeat right -3px;
+	border-radius: 8px;
+	color: #0066CC !important; 
+	font-size: 1.2em; 
+	margin-left: 204px; 
+	padding: 0.3em; 
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+fieldset #searchedWord:hover{
+	background: url(../images/search-icon.png) no-repeat right -33px;
+}
+
+
+fieldset #searchedWordHeader{ 
+	position: absolute; 
+	top: 19px; right: 650px; 
+	font-size: 1.2em; 
+	/*padding: 0.3em; */
+	color: #0066CC !important; 
+	background: url(../images/search-icon.png) no-repeat right -3px;
+	background-color: white;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+fieldset #searchedWordHeader:hover{
+	background: url(../images/search-icon.png) no-repeat right -33px;
+	background-color: white;
+}
+
+/* Retainer Status column */
+
+#retStatus{
+	float: left;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	width: 100%;
+}
+
+#retStatusLeft, #retStatusRight{
+	float: left;
+	padding-left: 5px;
+	width: 40%;
+}
+
+.retStatusSigner{
+	float: left;
+	font-size: .8em;
+	margin-bottom: 5px;
+	padding-left: 5px;
+	width: 100%;
+}

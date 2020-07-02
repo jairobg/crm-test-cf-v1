@@ -1,0 +1,824 @@
+body{  font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; }
+.wrapper{ margin:auto; width:980px;}
+
+
+/*HEADER
+****************************************************/
+#header-container{ background:#003366 url(../images/header-bg.jpg) repeat-x 0 0; height:100px; border-bottom:2px solid #6699CC; }
+#header-container a{ color: #CCFF33; text-decoration: none; }
+#header-container a:hover{ text-decoration: underline;}
+
+/*LOGO
+****************************************************/
+header hgroup{ float: left; width: 500px;}
+	header hgroup h2{ width: 90px; height: 60px; float: right; margin: 20px 0px 0px 30px;}
+	h1#logo{font-size: 100%; color:white; padding-top: 12px; float:left; font-weight:normal;}
+
+h2, h3{	font-weight:normal;}
+h2{	font-size: 55px;}
+h3{	font-size: 40px;}
+
+article h2{font:28px/26px "Lucida Grande", Helvetica, Helvetica Neue, Arial; color: #669900; font-weight: bold; text-shadow: white 0px 1px 1px;}
+
+
+/*CONTAINER
+****************************************************/
+#main-container{ background: white;}
+.registration-page {background:#D0E2EF !important;}
+.registration-page fieldset { margin-top: 40px;}
+.registration-page .submit-section {margin-right: 40px;}
+
+#main p{ /*font:16px/26px "Lucida Grande", Helvetica, Helvetica Neue, Arial; width:620px;	text-shadow:none;*/}
+#main header h2{ padding-bottom:10px;}
+#main article { margin-bottom: 20px;}
+#main a{ color: #0066CC; text-decoration: none;  font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial;}
+#main a:hover { text-decoration: underline; }
+
+/*FIELDSET : forms
+****************************************************/
+fieldset { }
+fieldset ul{ margin: 10px 0 10px 0;}
+fieldset ul li{ line-height: 25px; margin-bottom: 3px;}
+fieldset label{ display: inline; float: left; text-align: right; margin-right: 10px; color: #333; font-size: 13px; vertical-align: middle; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial;}
+fieldset input, fieldset select { color: black; font-size: 14px; padding: 0.4em; background: #fff; border: solid #999 1px; }
+fieldset input {padding: 0.3em; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial;}
+fieldset select { height: 30px;}
+fieldset .fileInput{ border: none;}
+
+.submit-section{ text-align: right; margin-top: 8px; padding-top: 8px; clear: both; border-top: solid 1px #BDCCD4; }
+.submit-section p{ line-height: 26px; font-size: 10px !important; }
+.submit-section input, li#btnLogin input, .smallButton, .mediumButton { padding: 5px 15px 5px 15px; border: solid 1px #006600; color:white; font-size: 16px; font-weight: bold;  background: #669900 url(../images/submit-bg.jpg) repeat-x center; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; text-shadow: #006600 0px 1px 1px;}
+.submit-section input:hover, li#btnLogin input:hover, .smallButton:hover, .mediumButton:hover{ background: #690;}
+	.mediumButton { padding: 5px 10px 5px 10px; font-size: 90%; }
+	.smallButton { padding: 3px 8px 3px 8px; font-size: 85%; }
+	.borderBottom{border-top: none; border-bottom: solid 1px #BDCCD4; margin-top: 0px;  margin-bottom: 8px; padding-bottom: 8px;}
+
+/*button list*/
+.actionButton{ line-height: 180% !important; color: white !important; text-decoration: none !important; font-size: 88% !important; padding: 0px 8px 0px 8px !important;  border: solid 1px #006600; font-weight: bold;  background: #669900 url(../images/submit-bg.jpg) repeat-x center; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; text-shadow: #006600 0px 1px 1px;}
+.actionButton:hover{background: #690;}
+
+.removeButton { line-height: 180% !important; color:#333 !important; text-decoration: none !important; font-size: 86% !important; padding: 0px 8px 0px 8px !important; border: solid 1px #999;  font-weight: bold;  background: #ccc url(../images/) repeat-x center; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; text-shadow: #fff 0px 1px 1px;}
+.removeButton:hover{background: #bbb;}
+
+.editButton { line-height: 180% !important; color:#333 !important; text-decoration: none !important; font-size: 86% !important; padding: 0px 8px 0px 8px !important; border: solid 1px #999;  font-weight: bold;  background: #ccc url(../images/) repeat-x center; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; text-shadow: #fff 0px 1px 1px;}
+.editButton:hover{background: #bbb;}
+
+
+/*Toolbar section*/
+.toolBar-section{ border-bottom: solid 1px #ccc; background: #f1f1f1; padding: 5px;}
+.toolBar-section .toolButton { line-height: 180% !important; color:#333 !important; text-decoration: none !important; font-size: 86% !important; padding: 0px 8px 0px 8px !important; border: solid 1px #999;  font-weight: bold;  background: #ccc url(../images/) repeat-x center; font-family: "Lucida Grande", Helvetica, Helvetica Neue, Arial; text-shadow: #fff 0px 1px 1px;}
+.toolBar-section .toolButton:hover{background: #bbb;}
+
+	
+/*Error message styles*/
+div.error{ display:none; width: 70%; padding: 7px 7px 7px 25px; 
+	color: #CC0000;	 
+	font-size: 90%;
+	background: #FFCCCC url(../images/warning-icon-small.png) no-repeat 4px center; 
+	border: solid 1px #FF9999;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+input.error, select.error { border: 1px solid red;  background-color: #FFFFD5; margin: 0px; color: red; }
+label.error {margin-bottom: 3px; line-height: 15px; text-align: left; clear: both; display: block; color: red; font-size: 11px; font-style: italic; font-weight: normal; }
+
+/*Forms on cfWindows
+******************************************************/
+.frmOnWindows{ padding: 20px;}
+.frmOnWindows li label{ float: inherit; display: block; text-align: left;}
+.frmOnWindows li textarea{ width: 100%; height: 80px;}
+
+
+
+/*FOOTER
+******************************************************/
+#footer-container{ height:40px; border-top:2px solid #6699CC;}
+#footer-container footer{ color:#6699CC; padding-top: 10px;}
+#footer-container footer p{ float: left; width: 200px; font-size: 90%;}
+	/*footer navigation
+	******************************************************/
+	#footer-container nav{float:right;}
+	#footer-container nav ul, 
+	#footer-container nav ul li{ display:inline; }
+	#footer-container nav a{ padding:10px; color:#6699CC; text-decoration:none;	}
+	#footer-container nav a:hover{ color: white; }
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            USER PAGES */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+aside#userLeft{ float: left; width: 18%; padding-top: 8px; background: white; margin-top: 50px; border-top: solid 1px #ccc;}
+section#userCenter{ float: left; width: 56%; padding: 20px 20px 30px 20px; font-size: 90%; background: #fff; min-height: 380px; border-left: solid 1px #ccc;}
+	section#userCenter h2{ color:#004F96; font-size: 1.4em;}
+	section#userCenter fielset{ margin-top: 0px !important;}
+	
+aside#userRight{float: right; width: 21%;}
+	#rBoxTop{ height: 50px;}
+	.rBox { margin-bottom: 1.5em;}
+	.rBox h3{ background: #f1f1f1; border-bottom: 1px solid #ccc; font-size: 85%; line-height: 2em; color: #333; padding-left: 5px; font-weight: bold; }
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            REGISTRATION PAGES */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+	/*REGISTRATION LEFT CONTENT: signUp form
+	****************************************************/
+	section#signupLeft { width: 480px; float: left; }
+
+	/*REGISTRATION RIGHT CONTENT: people logo
+	***************************************************/
+	aside#signupRight{ width:470px; height:500px; float: left; 	color:#D0E2EF; 	background: url(../images/vertical-gradient-bg.jpg) repeat-y 0 0; }
+	aside#signupRight h3#people-logo{ width: 400px; height: 400px; margin-top: 60px; float: right; display: block; overflow: hidden; text-indent: -9999px; background: url(../images/my-empty-space-gone-but-not-forgotten.png) no-repeat; }
+	
+	/*SIGN UP FORM
+	*****************************************************/
+	#signUp legend, 
+	section#signupLeft h2{font:28px/26px  "Lucida Grande", Helvetica, Helvetica Neue, Arial; color: #669900; font-weight: bold; text-shadow: white 0px 1px 1px;}
+	section#signupLeft h2{ margin-top: 40px;}
+	#signUp h3{font:18px/26px  "Lucida Grande", Helvetica, Helvetica Neue, Arial; color: #003366; font-weight: bold; text-shadow: white 0px 1px 1px;}
+	#signUp label { width: 160px;}
+	#signUp label span{ width: 160px; font-size: 10px; display: block;}
+	#signUp input{ display: inline; }
+		#birth-warning{ clear: both;  display: block; margin-left: 170px; }
+		#birth-warning a{ font-size: 11px;}	
+		
+	/*Error message styles*/
+	label.error { width: 400px !important; margin-left: 170px; margin-right: 20px; }
+
+		
+	/*LOGIN FORM
+	****************************************************/
+	#loginForm fieldset{ float: right; margin-top: 10px;}
+	#loginForm fieldset ul li { display: inline; }
+	#loginForm fieldset input{ width: 140px; }
+	#loginForm li#btnLogin input{  width: inherit; padding: 0.3em 10px 0.3em 10px; font-size: 13px;} 
+	#loginForm li.INFField { position:relative; }
+	#loginForm li.INFField label{ position:absolute; top:0; left:0; margin-top: -3px; padding: 0em 0 0 0.4em; width: inherit; color: #999;}
+		#loginOptions ul{ margin-bottom: 0px; }
+		#loginOptions ul li { margin: 0px; line-height: inherit;}
+		#loginOptions ul li input{ width:20px; padding: 0px; margin: 0px; margin-top: -3px; vertical-align: middle;}
+		#loginOptions label{ text-align: left; color: #fff; font-size: 10px; margin-right: 20px; }
+		#loginOptions label:hover{color: #CCFF33;}
+		#loginOptions .chkField{ background: none; border: none;}
+		.logingMsgErr{ color:#FF9900; font-size: 11px;}
+	#loginOptions a{font-size: 10px;}
+	
+	/*TOP RIGHT CONTENT
+	****************************************************/
+	#top-right{  margin-top: 10px; float: right; display: block; width: 400px;}
+	#top-right nav{margin-top: 10px; float: right; width: 196px;  /*background: #6699CC*/}
+
+		/*User avatar*/
+		#user-avatar{ clear: both; height: 50px; width: 300px; float: right; }
+		#user-avatar #avatarCol1{ display: block; float: right; width: 50px;}
+			#user-avatar #avatarCol1 img{border:  solid 1px #69C;}
+		#user-avatar #avatarCol2{ display: block; float: left;  width: 240px;}
+			#user-avatar #avatarCol2 p{ text-align: right; text-shadow: 0px 1px 0px #333;}
+		#welcome-msg{ font-size: 11px; text-align: right; color: #fff;}
+		#welcome-msg span{ color: #ccc; font-style: italic; }
+		
+		/*Photo Profile*/
+		.user-profilePhoto{ /*width: 40px; */height: 40px;}
+		.user-MediumProfilePhoto{ /*width: 65px; */height: 65px;}
+		.user-LargeProfilePhoto{ /*width: 70px; */height: 70px;}
+		
+		
+		/*User Menu Options*/
+		ul#user-menu { /*border: solid 1px #000; border-bottom: 0;*/  position: relative;  float: right; margin-top: 5px; }
+		ul#user-menu li { display: block; display: inline; float: left;   }
+		ul#user-menu li a, 
+		li#item-profile span{ cursor: pointer; color: #fff; display: block;  padding: 5px 12px 5px 12px;}
+		ul#user-menu li a:hover, 
+		li#item-profile span:hover{color: #CCFF33; text-decoration: none; /*url(../images/header-bg.jpg) repeat-x;*/ }
+		
+		li#item-profile span{ padding-right: 15px; background: url(../images/arrow-show.png) no-repeat 56px center;}
+		li#item-profile span:hover{background: url(../images/arrow-show.png) no-repeat 56px center;}		
+		li.activeMenu span{ background: white !important; color: black !important;}
+				
+			/*Submenu*/
+			ul#user-menu li ul{ display: none; right: 0; margin-right: -1px; margin-top: -1px; position: absolute;  background: #fff; border: solid 1px #000; border-top:0; }
+			ul#user-menu li ul li{ width: 220px; display: block; float:none;   }
+			ul#user-menu li ul li a{ font-size: 0.9em; line-height: 2.4em; display: block; color: #000; width: auto; padding: 0px 8px 0px 8px; }
+			ul#user-menu li ul li a:hover{ background: #d1e0f0; color: #336699; text-decoration: none;  }
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GENERAL FORM */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.generalForm legend, 
+.generalForm label { width: 180px;}
+.generalForm label span{ width: 160px; font-size: 10px; display: block;}
+.generalForm input{ display: inline; }
+.generalForm input[type="text"], .generalForm textarea { width: 50%;}
+.generalForm textarea { height: 100px; padding: 0.4em;}
+	/*label for checkbox*/
+	.generalForm .lblCheckbox { font-size: 11px; width: 50% !important; margin: 0px 0px 0px 170px !important; text-align: left; }
+	input[type="checkbox"]{vertical-align: center !important; border: none; background: none;}
+	input[type="radio"]{vertical-align: center !important; border: none; background: none;}
+
+input[type="file"]{ padding: 4px; border: solid 1px #E0EBF5; background:#E0EBF5; color: #004F96; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            USER LEFT MENU */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+	#userLeftMenu{}
+	#userLeftMenu li a{ background-repeat: no-repeat; padding-left: 26px; color: #666; display: block; font-size: 13px; line-height: 1.9em;}
+	#userLeftMenu li a:hover{ background-color: #e0ebf5; color: #336699; text-decoration: none;}
+	#userLeftMenu li a.active{ background-color: #d1e0f0; color: #222;}
+		/*news flash icon*/	
+		#userLeftMenu li#item01 a{ background-image: url(../images/mes-icons.png); background-position: 5px 0px;  }
+		/*messages icon*/	
+		#userLeftMenu li#item02 a{ background-image: url(../images/mes-icons.png); background-position: 5px -20px; }
+		/*search icon*/	
+		#userLeftMenu li#item03 a{ background-image: url(../images/mes-icons.png); background-position: 5px -40px; }
+		/*events icon*/	
+		#userLeftMenu li#item04 a{ background-image: url(../images/mes-icons.png); background-position: 5px -60px; }
+		/*groups icon*/	
+		#userLeftMenu li#item05 a{ background-image: url(../images/mes-icons.png); background-position: 5px -80px; }
+		/*friends icon*/	
+		#userLeftMenu li#item06 a{ background-image: url(../images/mes-icons.png); background-position: 5px -100px; }
+		/*list icon*/	
+		#userLeftMenu li#item07 a{ background-image: url(../images/mes-icons.png); background-position: 5px -120px; }
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            NEWS LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#newsList-textArea {margin: 10px 0px 0px 0px;  }
+#newsList-textArea label{ display: block; width: 100%; text-align: left; font-size: 11px;}
+#newsList-textArea textarea{ width: 536px; padding: 5px; height: 30px; color: black; border: solid 1px #BDCCD4;}
+
+#newsList-imageArea{margin: 10px 0px 0px 0px;}
+#newsList-imageArea label{display: block; width: 100%; text-align: left; font-size: 11px;}
+#newsList-imageArea input{ width: 536px; border: solid 1px #E0EBF5; background:#E0EBF5; color: #004F96; 
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#newsList-videoArea{margin: 10px 0px 0px 0px;}
+#newsList-videoArea label{display: block; width: 100%; text-align: left; font-size: 11px;}
+#newsList-videoArea input{ width: 536px; padding: 5px; height: 30px; color: black; border: solid 1px #BDCCD4;}
+
+
+
+#newsList { margin: 0px;}
+#newsList li{ margin: 0px; padding: 10px 0px 10px 0px; display: block; clear: both; border-bottom: solid 1px #ccc;   }
+#newsList .userImage{ display: block; float: left; padding-right: 10px;}
+#newsList .userInnerContent {  float: left; display: table-cell; vertical-align: top; }
+#newsList .userActions{ float: right; }
+
+	/*User news flash*/
+	#newsList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 4px; }
+	#newsList .userInnerContent h6 a{ font-size: 11px;}
+	#newsList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	#newsList .listDate { color: #999; clear: both; display: block;}
+	
+	/*Comments styles*/
+	.newsListComment { margin: 5px 40px 0px 60px;  background: #eff4f9;}
+	.newsListComment li { border-bottom: solid 2px white !important; padding: 6px 10px 6px 10px; margin: 0px;}
+	.newsListComment li.newsTopArrow{ padding: 0px !important; margin: 0px !important; height: 6px; background: #fff url(../images/arrow-top-comments.png) no-repeat bottom 5px; border-bottom: none !important;}
+	.newsListComment p{ line-height: 130%; font-size: 95%;}
+	.newsListComment .userImage{ margin-left: 10px;}
+		.newsCommentForm{background: #eff4f9; margin: 0px 40px 0px 60px;   padding: 6px 10px 6px 10px;}
+		.newsCommentForm textarea{ width: 98%; height: 30px; padding: 3px; border: solid 1px #BDCCD4;}
+		.newsCommentForm .smallButton{ float: right;}
+
+
+	/*Delete Message Button*/
+	.deleteMsgButton{ width: 15px; height: 15px; text-indent: -9999px; border: 0; background: url(../images/mes-delete-icons.png) no-repeat 0px 0px; }
+	.deleteMsgButton:hover{ background: url(../images/mes-delete-icons.png) no-repeat 0px -45px;} 
+	
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            MESSAGES LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#messageList li{  display: block; clear: both; border-bottom: solid 1px #ccc;  margin: 0px; padding: 5px; }
+	#messageList li.unread{ background:#e0ebf5;}
+#messageList .userAction{ float: left; padding: 20px 10px 10px 10px;}	
+#messageList .userImage{ display: block; float: left; padding-right: 10px;}
+#messageList .userInnerContent {  float: left; display: table-cell; vertical-align: top; }
+	
+	/*User messages list*/
+	#messageList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; font-size: 10px; }
+	#messageList .userInnerContent  a{ font-size: 11px;}
+	#messageList .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	#messageList .messageDate { font-size: 9px; color: #999; clear: both; display: block;}
+	#messageList .listActions{ padding: 4px 0px 4px 0px;}
+
+	/*READ MESSAGE*/
+	.readMessageContainer{}
+	.readMessageTop {border-bottom: solid 1px #BDCCD4; margin: 20px 0 10px 0; padding: 5px 0 5px 0;}
+	.readMessageTop .userImage{ float: left; margin-right: 10px;}
+	.readMessageInfo h6{ font-weight: normal; }
+	.readMessageInfo h6 a{font-weight: bold;}
+	.readMessageInfo .messageDate{font-size: 10px; color: #999;}
+	.readMessageContent{ margin-left: 60px; margin-bottom: 20px;   }	
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            FRIEND REQUEST LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#friendRequestList li{  display: block; clear: both; border-top: solid 1px #ccc;  margin: 0px; padding: 10px 0px 10px 0px; }
+#friendRequestList .userImage{ display: block; float: left; padding-right: 10px;}
+#friendRequestList .userInnerContent {width: 350px;  float: left; display: table-cell; vertical-align: top; }
+#friendRequestList .userActions{ float: right; }
+		
+	/*User messages list*/
+	#friendRequestList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 8px; font-weight: bold; font-size: 12px; }
+	#friendRequestList .userInnerContent  a{ font-size: 11px;}
+	#friendRequestList .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	#friendRequestList .messageText { line-height: 110%; font-size: 11px; color: #999; clear: both; display: block;}
+	#friendRequestList .messageText strong{ color: #666; font-weight: normal;}
+	#friendRequestList .listActions{padding: 4px 0px 4px 0px;}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*           SEARCH FRIEND RESULT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#friendResultList li{  display: block; clear: both; border-top: solid 1px #ccc;  margin: 0px; padding: 10px 0px 10px 0px; }
+#friendResultList .userImage{ display: block; float: left; padding-right: 10px;}
+#friendResultList .userInnerContent {width: 350px;  float: left; display: table-cell; vertical-align: top; }
+#friendResultList .userActions{ float: right; }
+#friendResultList .userActions p{ font-size: 11px; color: #666; font-style: italic;}
+		
+	/*User messages list*/
+	#friendResultList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 8px; font-weight: bold; font-size: 12px; }
+	#friendResultList .userInnerContent  a{ font-size: 11px;}
+	#friendResultList .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	#friendResultList .messageText { line-height: 110%; font-size: 11px; color: #999; clear: both; display: block;}
+	#friendResultList .messageText strong{ color: #666; font-weight: normal;}
+	#friendResultList .listActions{padding: 4px 0px 4px 0px;}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            MY LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#myList li{ display: block; clear: both; border-bottom: solid 1px #ccc; padding: 10px 0px 10px 0px;  margin: 0px 0px 10px 0px; }
+#myList .userImage{ display: block; float: left; padding-right: 10px;}
+#myList .userInnerContent {  float: left; display: table-cell; vertical-align: top; }
+	
+	/*User mylist list*/
+	#myList .userInnerContent  a{ font-size: 11px;}
+	#myList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; font-size: 10px; }
+	#myList .userInnerContent h6 a{ font-size: 13px !important; font-weight: bold;}
+	#myList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	#myList .listDate { color: #999; clear: both; display: block;}
+	#myList .listActions{ padding: 4px 0px 4px 0px;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            SEARCH FRIEND LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#searchFriendList li{ display: block; clear: both; border-top: solid 1px #ccc; padding: 10px 0px 0px 0px;  margin: 0px 5px 0px 10px; }
+#searchFriendList .userImage{ display: block; float: left; padding-right: 10px;}
+#searchFriendList .userInnerContent {  float: left; display: table-cell; vertical-align: top; }	
+	/*User mylist list*/
+	#searchFriendList .userInnerContent h6{ margin-top: 20px; padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; font-size: 10px; }
+	#searchFriendList .userInnerContent a{ font-size: 11px;}
+	#searchFriendList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	/*#searchFriendList .listDate { color: #999; clear: both; display: block;}*/
+	/*#searchFriendList .listActions{ padding: 4px 0px 4px 0px;}*/
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            SEARCH RESULT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#searchResultList { margin: 0px;}
+#searchResultList li { padding: 8px 0px 8px 0px; margin: 0px 10px 0px 10px; border-bottom: solid 1px #ccc;}
+#searchResultList li:last-child{ border-bottom: none;}
+#searchResultList button{ float: right;}
+#searchResultList .userImage{ display: block; float: left; padding-right: 10px;}
+#searchResultList .userInnerContent { width: 350px;  float: left; display: table-cell; vertical-align: top; }
+#searchResultList .userAction { float: right; }
+#searchResultList .userAction p{ color: #999; text-align: right;}
+	#searchResultList .userInnerContent h6{padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; }
+	#searchResultList .userInnerContent a{ font-size: 12px;}
+	#searchResultList .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	/*	
+	#searchResultList .listDate { color: #999; clear: both; display: block;}
+	#searchResultList .listActions{ padding: 4px 0px 4px 0px;}
+	*/
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            LIST FRIEND LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#listFriendList { margin: 0px;}
+#listFriendList li{ display: block; clear: both; border-bottom: solid 1px #ccc; padding: 10px 0px 10px 0px;  margin: 0px 10px 0px 10px; }
+#listFriendList li:last-child{ border-bottom: none;}
+#listFriendList .userImage{ display: block; float: left; padding-right: 10px;}
+#listFriendList .userInnerContent { width: 350px;  float: left; display: table-cell; vertical-align: top; }
+#listFriendList .userAction { float: right; }
+	
+	/*User mylist list*/
+	#listFriendList .userInnerContent h6{ margin-top: 20px; padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; font-size: 10px; }
+	#listFriendList .userInnerContent a{ font-size: 11px;}
+	#listFriendList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	/*#listFriendList .listDate { color: #999; clear: both; display: block;}*/
+	/*#listFriendList .listActions{ padding: 4px 0px 4px 0px;}*/
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            EVENT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#eventList li{ display: block; clear: both; border-bottom: solid 1px #ccc;  margin: 20px 10px 20px 10px; padding: 0px 0px 10px 0px; }
+/*#eventList .userImage{ display: block; float: left; padding-right: 10px;}*/
+#eventList .userInnerContent { width: 380px;  float: left; display: table-cell; vertical-align: top; }
+	
+	/*Event list*/
+	#eventList .userInnerContent h6, #eventList .userInnerContent h6 a{ line-height: 100%; padding: 0px;  margin-bottom: 4px; font-weight: bold; font-size: 16px; }
+	#eventList .userInnerContent  a{ font-size: 11px;}
+	#eventList .userInnerContent p{ padding: 0px; line-height: 110%;}
+	#eventList .listDate {line-height: 110%; color: #999; clear: both; display: block;}
+	/*#eventList .listActions{ padding: 4px 0px 4px 0px;}*/
+	#eventList .userAction{width: 130px; float: left; padding-right: 10px;}
+	#eventList .userAction p{ line-height: 110%; text-align: center; color: #999;}
+
+	/*User Response Form*/
+	.eventResponseForm{margin: 0px 0px 10px 0px;}
+	.eventResponseForm li{ line-height: 18px; border: none !important; margin: 0px !important; padding: 0px !important;  }
+	.eventResponseForm li label{ float: inherit; font-size: 11px; margin: 0px;}
+
+	
+		
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            EVENTS LIST INVITATIONS */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#eventListInvitations {margin-bottom: 20px;}
+#eventListInvitations li{  display: block; clear: both; border-top: solid 1px #ccc;  margin: 0px; padding: 5px; }
+	#eventListInvitations li.notInvited{ background:#e0ebf5;}
+#eventListInvitations .userAction{ float: left; padding: 15px 10px 10px 10px;}	
+#eventListInvitations .userImage{ display: block; float: left; padding-right: 10px;}
+#eventListInvitations .userInnerContent {  float: left; display: table-cell; vertical-align: top; }
+
+	/*User invitation list*/
+	#eventListInvitations .userInnerContent h6{ padding: 10px 0px 0px 0px; line-height: 100%; margin-bottom: 4px; font-weight: bold; font-size: 12px; }
+		#eventListInvitations .userInnerContent h6 span{font-weight: normal;}
+	#eventListInvitations .userInnerContent a{ font-size: 11px;}
+	#eventListInvitations .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	#eventListInvitations .messageDate { font-size: 9px; color: #999; clear: both; display: block;}
+	#eventListInvitations .listActions{ padding: 4px 0px 4px 0px;}
+
+	
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            MEMORIALS LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.memorialstList{ margin:0px;}
+.memorialstList li{  display: block; clear: both; margin:0px 10px 0px 10px; padding: 10px 0px 10px 0px; border-top: solid 1px #ccc; }
+.memorialstList li:first-child{ border-top: none !important;}
+.memorialstList .userImage{ display: block; float: left; padding-right: 10px;}
+.memorialstList .userInnerContent {width: 350px;  float: left; display: table-cell; vertical-align: top; }
+.userShort{width: 310px !important;}
+.memorialstList .userActions{ float: right; margin-top: 10px; }
+		
+	/*User messages list*/
+	.memorialstList .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 8px; font-weight: bold; font-size: 12px; }
+	.memorialstList .userInnerContent  a{ font-size: 11px;}
+	.memorialstList .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	.memorialstList .messageDate { line-height: 110%; font-size: 10px; color: #999; clear: both; display: block;}
+	.memorialstList .listActions{padding: 4px 0px 4px 0px;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            MEMORIAL TO FORM LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*#memorialTo li{  display: block; clear: both; border-top: solid 1px #ccc;  margin: 0px; padding: 10px 0px 10px 0px; }*/
+#memorialTo .userImage{ display: block; float: left; padding-right: 10px;}
+#memorialTo .userInnerContent { width: 240px; float: left; display: table-cell; vertical-align: top; }
+		
+	/*memorial form list*/
+	#memorialTo .userInnerContent h6{ padding: 0px; line-height: 100%; margin-bottom: 4px; font-weight: bold; font-size: 12px; }
+	#memorialTo .userInnerContent  a{ font-size: 12px;}
+	#memorialTo .userInnerContent p{ font-size: 11px; padding: 0px; line-height: 120%;}
+	#memorialTo .messageDate { line-height: 120%; font-size: 10px; color: #999; clear: both; display: block;}
+
+#memorialMessage textarea{ height: 200px;}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP RESULT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.groupResultList { margin: 0px;}
+.groupResultList li { padding: 8px 0px 8px 0px; margin: 0px 10px 0px 10px; border-bottom: solid 1px #ccc;}
+.groupResultList li:last-child{ border-bottom: none;}
+.groupResultList button{ float: right;}
+.groupResultList .userImage{ display: block; float: left; padding-right: 10px;}
+.groupResultList .userInnerContent { width: 350px;  float: left; display: table-cell; vertical-align: top; }
+.groupResultList .userAction { float: right; }
+	.groupResultList .userInnerContent h6{ margin-top: 20px; padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; }
+	.groupResultList .userInnerContent a{ font-size: 13px;}
+	.groupResultList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	/*	
+	.groupResultList .listDate { color: #999; clear: both; display: block;}
+	.groupResultList .listActions{ padding: 4px 0px 4px 0px;}
+	*/
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.groupList{ margin: 0px;}
+.groupList li { list-style: none; padding: 8px 0px 8px 0px; margin: 0px 10px 0px 10px; border-bottom: solid 1px #ccc;}
+.groupList li:last-child{ border-bottom: none;}
+.groupList li .removeButton{ float: right;}
+.groupList .userImage{ display: block; float: left; padding-right: 10px;}
+.groupList .userInnerContent { width: 460px;  float: left; display: table-cell; vertical-align: top; }
+.groupList .userAction { float: right; }
+	.groupList .userInnerContent h6{ padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; }
+	.groupList .userInnerContent a{ font-size: 13px;}
+	.groupList .userInnerContent p{ padding: 0px; line-height: 120%; margin-bottom: 10px;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP CONTENT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.groupContentList { margin: 0px; margin-bottom: 20px;}
+.groupContentList li { padding: 8px 0px 8px 0px; margin: 0px; border-bottom: solid 1px #ccc;}
+.groupContentList li:last-child{ border-bottom: none;}
+.groupContentList button{ float: right;}
+.groupContentList .userImage{ display: block; float: left; padding-right: 10px;}
+.groupContentList .userInnerContent { width: 220px;  float: left; display: table-cell; vertical-align: top; }
+.groupContentList .userActions { float: right; }
+.groupContentList .userActions form{float: left;}
+.groupContentList .userActions .removeButton{ margin-left: 10px;}
+	.groupContentList .userInnerContent h6{ margin-top: 20px; padding:0px; line-height: 100%; margin-bottom: 4px; font-weight: normal; }
+	.groupContentList .userInnerContent a{ font-size: 13px;}
+	.groupContentList .userInnerContent p{ padding: 0px; line-height: 120%;}
+	/*	
+	.groupContentList .listDate { color: #999; clear: both; display: block;}
+	.groupContentList .listActions{ padding: 4px 0px 4px 0px;}
+	*/
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP MEMBERS ICON LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#groupMembersIcons { list-style: none; margin: 10px 0px 0px 0px; padding: 0px;}
+#groupMembersIcons li{  float: left; margin: 1px 1px 0px 0px; }
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP MEMBERS LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#groupMembersList{ margin: 0px 0px 20px 0px; list-style: none;}
+#groupMembersList li{  display: block; width: 174px; height: 110px;  float: left; text-align: center; margin: 8px 8px 0px 0px;}
+#groupMembersList li a{ display: block; padding: 5px 0px; background: #f1f1f1; border: solid 1px #ddd;}
+#groupMembersList li a:hover{ background: #e0ebf5; text-decoration: none; color: #333;}
+#groupMembersList li a small{ color: #666; font-style: italic; font-size: 10px;}
+#groupMembersList li a:hover h6 { color: #06C; text-decoration: underline !important;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            ADD AS FRIEND POPUP FORM */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#addAsFriend textarea{ width: 95%; height: 60px; padding: 5px; font-size: 14px;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            USER EVENT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.userEventList { margin: 0px;}
+.userEventList li { list-style: none; padding: 8px 0px 8px 0px; margin: 0px 10px 0px 10px; border-bottom: solid 1px #ccc;}
+.userEventList li:last-child{ border-bottom: none;}
+.userEventList li .removeButton{ float: right;}
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            EVENT LIST */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.eventsList li { padding: 5px; border-bottom: solid 1px #ccc;}
+.eventsList .actionButton{ float: right;}
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            SEARCH FORMS */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.searchField { height: 22px; border: solid 1px #ccc; float: left; padding: 0px; }
+.searchField .searchText { vertical-align: top; height: 22px; border: none !important;  padding: 0px 4px 0px 4px; font-size: 12px; outline: none; }
+.searchField .searchButton { vertical-align: top;height: 22px; width: 24px;  border: none !important; text-indent: -9999px; overflow: hidden; background: #f1f1f1 url(../images/mes-icons.png) no-repeat 5px -39px;}
+.searchField .searchButton:hover { background-color: #ddd;}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            Memorial Template list */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#memorialTemplateActive { background: #f1f1f1; width: 220px; padding: 5px;}
+#memorialTemplateActive img{ width: 220px; }
+
+#memorialTemplateList{ margin: 10px 0px 0px 0px; padding: 0px;}
+#memorialTemplateList li{ width: 100px; float: left; margin: 0px 10px 10px 0px; padding: 5px; background: #f1f1f1; list-style: none;}
+#memorialTemplateList li img{ width: 100px; cursor: pointer; border: solid 1px #f1f1f1;}
+#memorialTemplateList li img:hover{border: solid 1px #333;}
+#memorialTemplateList li h6{}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            Memorial Image Gallery list */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#thisMemorialImageGallery {border: solid 1px #f1f1f1; padding: 10px; margin: 10px 0px 10px 0px;}
+#memorialImgGalleryList{ margin: 0px; padding: 0px;} 
+#memorialImgGalleryList li{ background: #f1f1f1; text-align: center;  margin: 0px 5px 5px 0px; padding: 2px; display: block; float: left; list-style: none;}
+#memorialImgGalleryList li .removeButton{ width: 100%}
+#memorialImgGalleryList li img{ height: 60px; cursor: pointer; margin: 0px; border: solid 1px white;}
+#memorialImgGalleryList li form{ margin: 0px; }
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            USER PROFILE PAGE */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#userProfile{ background: #f1f1f1; padding: 10px; border-top: solid 1px #CCC;}
+#userProfile header h2{ color: black;}
+#userProfile .left{ float: left; width: 280px;}
+#userProfile .right{ float: right; width: 204px;}
+#userProfile .right img{ border: solid 1px #666;}
+
+	#userProfileInfo{margin:  10px 0px 10px 0px; padding: 0px; font-size: 11px; }
+	#userProfileInfo li{ height: 20px; clear: both; display: block; list-style: none; color: #666; line-height: 20px; border-bottom: dotted 1px #e1e1e1;}
+	#userProfileInfo li label{ width: 100px; display: block; float: left; font-weight: bold; } 
+	#userProfileInfo li label span{display: block;}
+
+
+	#listsCategories .noData{ padding: 20px 10px; color: #999; font-style: italic;}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            GROUP INFO */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#groupInfo{}
+#groupInfoImage{ width: 200px; float: left;}
+#groupInfoContent{ width: 320px; float: right;}
+#groupInfoContent p{ line-height: 140%; margin-bottom: 10px;}
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            REQUEST LIST BOX */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#requestListBox { margin: 10px 0px 10px 0px; padding: 0px;}
+#requestListBox li{ line-height: 20px; list-style: none; margin: 0px 4px 1px 4px; padding: 0px; }
+#requestListBox li a{ font-size: 11px; display: block;}
+#requestListBox li a:hover{ background: #E0EBF5; text-decoration: none; color: #333;}
+#requestListBox li a span{ background: #d1e0f0; color: #336699; padding: 2px 4px 2px 4px;}
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            ADS LIST BOX */
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+#adsListBox { margin: 10px 0px 10px 0px; padding: 0px;}
+#adsListBox li { list-style: none; margin: 0px; padding: 0px; }
+#adsListBox li a{ }
+#adsListBox li a img{ border: solid 2px #fff; }
+
+
+
+
+
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+/*
+/*            POPUP WINDOWS*/
+/*
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+.popupContent{ background: white; padding: 20px;}
+.x-window-mc{ background: white;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info{
+	position:absolute;
+	top:5px;
+	background-color:white;
+	padding:10px;
+}
+
+#jquery-test{
+	top:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *  CSS3 Media queries
+ */
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+

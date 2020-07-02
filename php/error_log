@@ -1,0 +1,5 @@
+[11-Dec-2016 00:01:03 America/Chicago] PHP Fatal error:  SOAP Fault: (faultcode: HTTP, faultstring: Could not connect to host) in /home/crmlexco/public_html/rlg/php/CheckPayment.php on line 45
+[12-Dec-2016 12:00:23 America/Chicago] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://www.securpaycardportal.com/proxy/proxy.incoming/eftservice.asmx?wsdl' : Start tag expected, '<' not found
+ in /home/crmlexco/public_html/rlg/php/CheckPayment.php on line 24
+[13-Dec-2016 12:00:19 America/Chicago] PHP Fatal error:  SOAP-ERROR: Parsing WSDL: Couldn't load from 'https://www.securpaycardportal.com/proxy/proxy.incoming/eftservice.asmx?wsdl' : Start tag expected, '<' not found
+ in /home/crmlexco/public_html/rlg/php/CheckPayment.php on line 24
